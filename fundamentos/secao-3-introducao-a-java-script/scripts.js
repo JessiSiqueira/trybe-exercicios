@@ -1,12 +1,14 @@
-let nota = 75;
-
-if (nota >= 80) {
-    console.log("Parabéns, você faz parte do grupo de pessoas aprovadas");
-} else if (nota < 80 || nota === 60) {
-    console.log("Você está na nossa lista de espera");
-} else if (nota < 60) {
-    console.log("Infelizmente, você reprovou.");
+let currentHour = 20;
+let message = '';
+if (currentHour <= 22) { 
+    console.log("Não deveriamos comer nada, é hora de dormir");
+} else if(currentHour >= 18 && currentHour < 22) {
+    console.log("vamos jantar");
+} else if(currentHour >= 14 && currentHour < 18) {
+    console.log("vamos fazer um bolo para o café");
+} else if(currentHour >= 11 && currentHour < 14) {
+    console.log("hora do almoço");
+} else if( currentHour <= 4 || currentHour <= 11) {
+    console.log("hmmm, cheiro de café");
 }
-
-console.log(nota)
-
+console.log(message)
