@@ -1,14 +1,27 @@
-let currentHour = 20;
-let message = '';
-if (currentHour <= 22) { 
-    console.log("Não deveriamos comer nada, é hora de dormir");
-} else if(currentHour >= 18 && currentHour < 22) {
-    console.log("vamos jantar");
-} else if(currentHour >= 14 && currentHour < 18) {
-    console.log("vamos fazer um bolo para o café");
-} else if(currentHour >= 11 && currentHour < 14) {
-    console.log("hora do almoço");
-} else if( currentHour <= 4 || currentHour <= 11) {
-    console.log("hmmm, cheiro de café");
+let numero = 5
+
+if(numero > 0) {
+    console.log("Positivo");
+} else if(numero < 0){
+console.log("Negativo");    
+} else {
+    console.log("zero");
 }
-console.log(message)
+
+let angulo1 = 90;
+let angulo2 = 9;
+let angulo3 = -3;
+let somaDosAngulos = angulo1 + angulo2 + angulo3;
+let AngulosPositivos = angulo1 > 0 && angulo2 > 0 && angulo3 > 0;
+
+
+
+if(AngulosPositivos){
+ if(somaDosAngulos === 180) { 
+    console.log(true);
+ } else {
+    console.log(false);
+ };
+} else {
+    console.log('inválido')
+}
