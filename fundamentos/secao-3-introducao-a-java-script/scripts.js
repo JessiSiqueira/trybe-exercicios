@@ -25,3 +25,13 @@ if(AngulosPositivos){
 } else {
     console.log('inválido')
 }
+
+let peca = 'martelo';
+
+switch(peca) { 
+    case 'rainha':
+    console.log('diagonal, horizontal e vertical');
+    break;
+    case 'martelo':
+    console.log('isso não é uma peça de xadrez')
+}
