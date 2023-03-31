@@ -35,3 +35,37 @@ switch(peca) {
     case 'martelo':
     console.log('isso não é uma peça de xadrez')
 }
+
+let numero1 = 4;
+let numero2 = 3;
+let numero3 = 8;
+
+if(numero1 % 2 === 0 || numero2 % 2 === 0 || numero3 % 2 === 0) {
+    console.log(true);
+} else {
+    console.log(false);
+}
+
+let number1 = 4;
+let number2 = 6;
+let number3 = 8;
+
+if(number1 % 2 != 0 || number2 % 2 != 0 || number3 % 2 != 0) {
+    console.log(true);
+} else {
+    console.log(false);
+}
+
+let salario = 3.000;
+
+if (salario) {  
+    let SalarioMenosINSS = salario - (salario * 11/100);
+    let SalarioLiquido = SalarioMenosINSS - (SalarioMenosINSS * 0.075);
+    console.log(SalarioLiquido)
+}  
+
+let groceryList = ['Arroz', 'Feijão', 'Alface', 'Melancia'];
+
+for (index = 0; index < groceryList.length; index += 1) {
+    console.log(groceryList[index]);
+}
