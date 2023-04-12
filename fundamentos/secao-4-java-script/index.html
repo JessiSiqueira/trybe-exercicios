@@ -80,8 +80,22 @@
          const section3 = document.createElement('section');
          section3.className = 'right-content';
          mainContent.appendChild(section3);
+
+         const imagem = document.createElement('img');
+         imagem.src = "https://picsum.photos/200";
+         imagem.className = 'small-image';
+         section2.appendChild(imagem);
+
+         const lista = document.createElement('ul');
+         const numero = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+          
+         for(index = 0; index < numero.length; index += 1 ) {
+            const li = document.createElement('li');
+           li.innerText = numero[index];
+           lista.appendChild(li);
+         }
     
-         
+         section2.appendChild(lista);
     </script>
   </body>
 </html>
